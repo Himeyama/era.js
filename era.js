@@ -125,8 +125,8 @@ class Era extends Date{
         }
     }
 
-    static date2wareki(id){
+    static date2wareki(id, cal="和暦", short=true, type=0){
         let e = document.getElementById(id)
-        e.innerText = (new Era(e.innerText)).getWareki("和暦", true, 1)
+        e.innerText = (new Era(e.innerText)).getWareki(cal, short, type)
     }
 }
