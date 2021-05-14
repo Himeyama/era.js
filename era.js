@@ -71,7 +71,7 @@ class Era extends Date{
         let dayES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][this.getDay()]
         let dayE = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][this.getDay()]
         let era = e[0]
-        let ye = e[1]
+        let ye = e[1] == 1 ? "元" : e[1]
         if(cal == "西暦"){
             if(short){
                 if(type == 0)
